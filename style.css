@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+:root{
+    --hg:'Orelega One', cursive;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    /* min-height: 100vh; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+background-color: #0b1522;
+}
+.great{
+    /* width: 500px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+.heart{
+    
+    height: 100px;
+    width: 100px;
+    background-color: #f20044;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #f20044;
+    animation:  heart 0.6s linear infinite;
+}
+@keyframes heart {
+    0%{
+        transform: rotate(-45deg) scale(1.07);
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.0);
+    }
+    100%{
+        transform: rotate(-45deg) scale(0.9);
+    }
+}
+.heart::before{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: #f20044;
+    top: -50%;
+    border-radius: 50px;
+    box-shadow: -10px -10px 90px #f20044;
+}
+.heart::after{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: #f20044;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 90px #f20044;
+}
+.general{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    color: aqua;
+margin-top: 20px;
+/* margin-left: -100px; */
+font: 300 50px var(--hg);
+animation-name: myheart;
+animation-duration: 2s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+
+background-color: red;
+}
+
+@keyframes myheart {
+    0%{
+color: rgb(221, 118, 22);
+transform: scale(0.8);
+background-color: blanchedalmond;
+    }
+    50%{
+        color: rgb(25, 221, 51);
+        transform: scale(1.1);
+        /* display: none; */
+        box-shadow: 10px 10px 10px red;
+        background-color: black;
+        
+    }
+    100%{
+       color: #daf200; 
+       transform: scale(0.8);
+       box-shadow: 2px 2px 2px red;
+       background-color: blue;
+    }
+    
+
+}
+.heart2{
+    height: 100px;
+    width: 100px;
+    background-color: #f20044;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #f20044;
+    animation:  heart2 0.6s linear infinite;
+    margin-left: 500px;
+}
+@keyframes heart2 {
+    0%{
+        transform: rotate(-45deg) scale(1.07);
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.0);
+    }
+    100%{
+        transform: rotate(-45deg) scale(0.9);
+    }
+}
+.heart2::before{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: #f20044;
+    top: -50%;
+    border-radius: 50px;
+    box-shadow: -10px -10px 90px #f20044;
+}
+.heart2::after{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: #f20044;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 90px #f20044;
+}
+h1{
+    color: aqua;
+/* margin-top: 300px;
+margin-left: -100px; */
+font: 300 50px var(--hg);
+animation-name: myheart;
+animation-duration: 2s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+
+background-color: red;
+}
+
+@keyframes myheart {
+    0%{
+color: rgb(221, 118, 22);
+transform: scale(0.8);
+background-color: blanchedalmond;
+    }
+    50%{
+        color: rgb(25, 221, 51);
+        transform: scale(1.1);
+        /* display: none; */
+        box-shadow: 10px 10px 10px red;
+        background-color: black;
+        
+    }
+    100%{
+       color: #daf200; 
+       transform: scale(0.8);
+       box-shadow: 2px 2px 2px red;
+       background-color: blue;
+    }
+    
+
+}
